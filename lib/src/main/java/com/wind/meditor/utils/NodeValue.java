@@ -36,7 +36,7 @@ public final class NodeValue {
     }
 
     public static final class MetaData{
-        public static final String TAG_NAME = "meta-data";
+        public static final String TAG_NAME = "activity";
 
         public static final String NAME="name";
         public static final String VALUE="value";
