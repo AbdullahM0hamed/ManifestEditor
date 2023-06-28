@@ -1,6 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 allprojects  {
-    apply plugin: 'maven'
+    apply plugin: 'maven-publish'
     apply plugin: 'idea'
     apply plugin: 'eclipse'
     version = '1.0.2'
@@ -10,7 +10,7 @@ defaultTasks('clean','distZip')
 
 subprojects {
     apply plugin: 'java'
-    apply plugin: 'maven'
+    apply plugin: 'maven-publish'
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 
