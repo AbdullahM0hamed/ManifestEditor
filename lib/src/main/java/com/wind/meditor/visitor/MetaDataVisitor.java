@@ -23,7 +23,6 @@ public class MetaDataVisitor extends ModifyAttributeVisitor {
         }
         ArrayList<AttributeItem> list = new ArrayList<>();
         list.add(new AttributeItem("name", metaData.getName()));
-        list.add(new AttributeItem("value", metaData.getValue()));
         return list;
     }
 }
