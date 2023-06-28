@@ -68,29 +68,19 @@ public class ModificationProperty {
     }
 
     public ModificationProperty addDeleteMetaData(String name) {
-        this.deleteMetaDataList.add(new MetaData(name, ""));
+        this.deleteMetaDataList.add(new MetaData(name));
         return this;
     }
 
     public static class MetaData {
         private String name;
-        private String value;
 
-        public MetaData(String name, String value) {
+        public MetaData(String name) {
             this.name = name;
-            this.value = value;
         }
 
         public String getName() {
             return name;
-        }
-
-        public void setValue(String value) {
-            this.value = value;
-        }
-
-        public String getValue() {
-            return value;
         }
     }
 }

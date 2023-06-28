@@ -266,7 +266,7 @@ public class ManifestEditorMain extends BaseCommand {
             String[] nameValue = metaData.split(MULTI_NAME_SEPERATER);
 
             if (nameValue.length == 2) {
-                property.addMetaData(new ModificationProperty.MetaData(nameValue[0], nameValue[1]));
+                property.addMetaData(new ModificationProperty.MetaData(nameValue[0]));
             }
         }
 

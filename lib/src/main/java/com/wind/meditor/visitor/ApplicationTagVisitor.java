@@ -32,7 +32,7 @@ public class ApplicationTagVisitor extends ModifyAttributeVisitor {
             NodeVisitor nv = super.child(null, name);
             if (curMetaData != null) {
                 return new MetaDataVisitor(nv, new ModificationProperty.MetaData(
-                        curMetaData.getName(), curMetaData.getValue()));
+                        curMetaData.getName());
             }
         } else if (NodeValue.MetaData.TAG_NAME.equals(name)
                 && deleteMetaDataList != null && !deleteMetaDataList.isEmpty()) {
